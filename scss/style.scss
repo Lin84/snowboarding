@@ -1,0 +1,1207 @@
+div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+	// border:1px dashed red;
+}
+  
+@font-face {
+	font-family: "ProximaNova";
+	src: url("./mat/Mark Simonson - Proxima Nova Alt Condensed Thin.otf"); 
+}
+
+@font-face {
+	font-family: "ProximaNova-bold";
+	src: url("./mat/Mark Simonson - Proxima Nova Alt Bold.otf"); 
+}
+@font-face{
+	font-family:"ProximaNova-regular";
+	src: url("./mat/Mark Simonson - Proxima Nova Alt Regular.otf")
+}
+
+body, html{
+	background-color: #f2f6c1;
+	font-size:0;
+	margin:0;
+	min-width:320px;
+	overflow-x:hidden;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+	color:#ffffff;
+	font-family:"ProximaNOva";
+	text-decoration:none;
+}
+
+.btn{
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-user-select:none;
+	background-color:none;
+	border:none;
+	cursor:pointer;
+	display:inline-block;
+	outline:none;
+	padding:0;
+	text-align:center;
+	text-decoration:none;	
+}
+
+.btn:active{
+	/* create feeling of clickable button*/
+	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.25);
+	position: relative;
+	top:1px;
+}
+
+.btn:focus{
+	outline:none;
+}
+
+.container{
+	margin:0 auto;
+	min-width:300px;
+	max-width:1400px;
+}
+
+.wrap{
+	margin:0 auto;
+	max-width:1224px;
+	min-width:300px;
+	padding:10px;
+}
+
+// navbar section ******************************************
+	#navbar{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,i{
+			// border:1px dashed red;
+		}
+		background-color:#000000;
+		border-bottom:1px solid #ffffff;
+		left: 0;
+		position: fixed;
+		right:0;
+		z-index: 9999;
+		nav{
+			.container{	
+				.wrap{
+					.navbar-header{
+						min-width:320px;
+						position:relative;
+						text-align:center;
+						#logo{
+							width:60px;
+							cursor:pointer;
+							vertical-align:middle;
+							float:left;
+						}
+						.navbar-toggle{
+							background-color:#000000;
+							border-radius:4px;
+							border:1px solid #ffffff;
+							float: right;
+							height:43px;
+							padding:10px;
+							width:43px;
+							.icon-bar{
+								background-color:#ffffff;
+								margin-bottom:3px;
+								height:2px;
+								display:block;
+								border-radius:5px;
+							}
+							.icon-bar:last-child{
+								margin-bottom:0;
+							}
+						}
+						.navbar-toggle:hover{
+							background-color:#ffffff;
+							.icon-bar{
+								background-color:#000000;
+							}
+						}
+						.search{						
+								display:inline-block;
+								height:43px;
+								margin-top:10px;
+								margin:0 auto;
+								vertical-align:middle;
+								width:50%;
+
+								form{
+									position: relative;
+									.search-text-field{
+										border:0;
+										box-sizing: border-box;
+										display:inline-block;
+										height: 43px;
+										padding:0 35px 0 10px;
+										vertical-align: middle;
+										width: 100%;
+										font-size:17px;
+									}
+									.search-text-field:focus{
+										outline:none;
+									}
+									span{
+										margin:7px 1px;
+										position: absolute;
+										right: 0;
+										top:0;
+										cursor:pointer;
+										border:1px solid rgba(0,0,0,0);
+										.fa-search{
+											height: 28px;
+											width: 28px;
+											color:#000000;
+											font-size:24px;
+											line-height:28px;
+										}
+									}
+									span:hover{
+										border:1px solid #000000;
+									}
+								}					
+							}
+						.navbar-right{
+							text-align:right;
+							margin-top:10px;					
+							.bag-wrapper{
+								display:inline-block;
+								width:30px;
+								height:30px;
+								vertical-align:middle;
+								text-align:center;
+								line-height:30px;
+								border:1px solid rgba(0,0,0,0);
+								cursor:pointer;
+
+								#bag{
+									height:20px;
+									display:inline-block;
+									vertical-align:middle;
+									color:#ffffff;
+									width:20px;
+									font-size:15px;
+								}
+							}
+							.bag-wrapper:hover{
+								border:1px solid #ffffff;
+							}
+							#total{
+								font-size:38px;
+								display:inline-block;
+								vertical-align:middle;
+								font-weight:700;
+								margin-left:10px;
+							}
+						}
+					}
+					.collapse{
+						display:none;
+						ul{
+							text-align:center;
+							li{
+								width:46%;
+								margin:5px 5px 0 5px;
+								display:inline-block;
+								border-radius:5px;
+								border:1px solid #ffffff;
+								a{
+									font-size: 26px; 
+									font-weight: 600;
+									display:block;
+									padding:5px;
+								}
+							}
+							li:hover{
+								background-color:#ffffff;
+								a{
+									color:#000000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+// home section ********************************************
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+
+		background-color:#ffffff;
+		padding-top:55px;
+		.container{
+			.wrap{
+				padding:0;
+				.swiper-container{
+					z-index:1;
+					.swiper-wrapper{
+						z-index:1;
+						.swiper-slide{
+						z-index:1;						
+							#home-slide-1{
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								-webkit-background-size: cover;
+								background-image:url("../img/Camada 3.png");
+								background-position:right;
+								background-size: cover;
+								height:460px;
+								text-align:center;
+
+								z-index:1;
+								.home-slider-main-text{
+									.run-over{
+
+									}
+									.see-details{
+										background-color:#000000;
+									}
+								}
+								.home-slider-main-text:hover{
+									.run-over{
+										color:#000000;
+									}
+									.see-details{
+										color:#000000;
+										background-color:#ffffff;
+									}
+								}
+							}
+
+							#home-slide-2{
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								-webkit-background-size: cover;
+								background-image:url("../img/Camada 4.png");
+								background-position:center;	
+								background-size: cover;
+								height:460px;
+								text-align:center;
+								.home-slider-main-text{
+									.run-over{
+										color:#000000;
+									}
+									.see-details{
+										color:#000000;
+										background-color:#ffffff;
+									}
+								}
+								.home-slider-main-text:hover{
+									.run-over{
+										color:#ffffff;
+									}
+									.see-details{
+										color:#ffffff;
+										background-color:#000000;
+									}
+								}
+							}
+
+							.home-slider-main-text{
+								margin-top:280px;
+								width:300px;
+								position:relative;
+								display:inline-block;
+								max-width:493px;
+
+								.run-over{
+									font-family: "ProximaNova-bold";
+									font-size: 45px;
+									font-weight:700;
+									text-align:left;
+
+								}
+
+								.see-details{
+									border-radius:3px;
+									float:right;
+									font-size: 16px; 
+									font-weight:700;
+									height:50px;
+									line-height:50px;
+									margin-top:10px;
+									width:149px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+// snowboards section **************************************
+	#snowboards{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		background-color:#ffffff;
+		.container{
+			.wrap{
+				text-align:center;
+				padding:0;
+				.snowbloards-top{
+					padding:60px 10px;
+					.snowboards-title{
+						color: #000000;
+						font-size: 38px;
+						font-family: "ProximaNova-bold";
+					}
+					.snowboards-p{
+						color: #000000;
+						font-size: 20px; 
+						font-weight: 700;
+						text-align: center;
+						margin-top:38px;
+					}
+				}
+				.swiper-snowboards{
+					margin:28px auto;
+					.swiper-wrapper{
+						.swiper-slide{
+							img{
+								max-height:405px;
+							}
+						}
+					}
+					.swiper-button-prev{
+			    		font-weight: 100;
+			    		top:50%;
+			    		left:0px;
+			    		background-image: url("../img/prev.png");
+			    		background-size: cover;
+			    		-moz-background-size:cover;
+			    		-o-background-size:cover;
+			    		-webkit-background-size:cover;
+			    		height: 88px;
+			    		margin-top:-44px;
+			    		width:47px;
+			    	}
+			    	.swiper-button-next{
+			    		font-weight: 100;
+			    		top:50%;
+			    		right:0px;
+			    		background-image: url("../img/next.png");
+			    		background-size: cover;
+			    		-moz-background-size:cover;
+			    		-o-background-size:cover;
+			    		-webkit-background-size:cover;
+			    		height: 88px;
+			    		margin-top:-44px;
+			    		width:47px;
+			    	}
+				}
+				.snowboards-bottom{
+					padding:60px 10px;
+					.snowboards-sub-title{
+						color: #000000;
+						font-size: 20px; 
+						font-weight: 600;
+						font-family: "ProximaNova-bold";
+					}
+				}
+			}
+		}
+	}
+
+// mountains section ****************************************
+	#mountains{
+		background:#000000;
+		.container{
+			.wrap{
+				background-image:url("../img/bg image.png");
+				-o-background-size:cover;
+				-moz-background-size:cover;
+				-webkit-background-size:cover;
+				background-size:cover;
+				text-align:center;
+				padding:30px 10px;
+
+				.mountains-title{
+						color: #ffffff;
+						font-size: 38px;
+						font-family: "ProximaNova-bold";
+				}
+				.mountains-p{
+					color: #ffffff;
+					font-size: 20px; 
+					font-weight: 700;
+					margin-top:28px;
+					text-align:justify;
+					max-width:600px;
+					line-height:30px;				
+				}
+			}
+		}
+	}
+
+// features section *****************************************
+	#features{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:0.1px dashed red;
+		}
+		background-color:#ffffff;
+		.container{
+			// text-align:center;		
+			.wrap{
+				text-align:center;
+				padding:30px 10px;
+				.features-title{
+					color: #000000;
+					font-size: 38px;
+					font-family: "ProximaNova-bold";
+				}
+				.features-menu{
+					text-align:center;
+					.features-sec-all{
+						width:222px;
+						margin:27px 13px 0 13px;;
+						border-bottom:3px solid #ffffff;
+						cursor:pointer;
+						display:inline-block;
+						img{
+							width:220px;
+							height:160px;
+						}
+
+						p{
+							color: #000000;
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 30px; 
+							text-align: left;	
+							font-family:"ProximaNova-regular";
+							margin-top:16px;
+							width:220px;			
+						}
+					}
+					.features-sec-all:hover{
+						border-bottom:3px solid #000000;
+					}
+					.features-born{
+					}
+					.features-jeremy{
+					}
+					.features-burton{
+					}
+					.features-tokyo{
+					}
+				}
+			}
+		}
+	}
+
+// features section *****************************************
+	#summary{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:0.1px dashed red;
+		}
+		background-color:#000000;
+		.container{
+			.wrap{
+				padding:0px 10px;
+				.summary-sec{
+					text-align:center;
+					// width:100%;
+					.summary-column{
+						width:228px;
+						height:222px;
+						display:inline-block;
+						vertical-align:middle;
+						margin:10px 10px;
+						margin-top:30px;
+						.summary-sec-title{
+							color:  #ffffff;
+							font-size: 19px;
+							line-height: 30px;
+							text-align: left;
+							font-weight:700;
+							font-family:"ProximaNova-regular";	
+							margin-left:7px;					
+						}
+						ul{
+							margin-top:17px;
+							
+							li{
+								color:  #c9c9c9;
+								font-size: 18px;
+								font-weight: 400;
+								line-height: 40px;
+								text-align: left;
+								cursor:pointer;
+								padding-left:7px;
+								border:1px solid rgba(0,0,0,0);
+								form{
+									width:100%;
+									font-size:0;
+									overflow:hidden;
+									height:42px;
+									// border:1px dashed orange;
+
+									input{
+										width:70%;
+										height:42px;
+										vertical-align:middle;
+										outline:none;
+										padding:0 10px;
+										box-sizing:border-box;
+										border:none;
+									}
+									.summary-btn{
+										width:30%;
+										height:42px;
+										vertical-align:middle;
+										font-family: "ProximaNova-bold";
+										font-weight:700;						
+										box-sizing:border-box;
+										color: #010101;
+										font-size: 15px; 
+										line-height: 42px; 
+										// border:none;
+										// box-shadow: none;
+									}
+									.summary-btn:hover{
+										// color:
+									}
+								}
+							}
+							li:hover{
+								color:#ffffff;
+								border:1px solid #ffffff;
+								background-color:#000000;
+							}
+							li:active{
+								position:relative;
+								top:1px;
+							}
+						}
+						.social{
+							margin-top:21px;
+							display:table;
+							width:100%;
+							font-size:0;
+							height:45px;
+							.social-icon{								
+								display:table-cell;
+								width:20%;
+								text-align:center;
+								border:1px solid rgba(0,0,0,0);
+								height:45px;
+								line-height:45px;
+								font-size:20px;
+								color:#ffffff;
+								cursor:pointer;
+							}
+							.social-icon:hover{
+								border:1px solid #ffffff;
+							}
+							.social-icon:active{
+								position:relative;
+								top:1px;
+							}
+						}
+						.social:active{
+							position:static;
+							top:0;
+						}
+					}
+					.summary-column:nth-child(2){
+						margin-top:-20px;
+					}
+					.summary-column:last-child{
+						ul{
+							li:hover{
+								border:1px solid rgba(0,0,0,0);
+							}
+							li:active{
+								position:static;
+								top:0;
+							}
+						}
+					}
+				}
+			}			
+		}
+	}
+
+// footer section *******************************************
+	footer{
+		footer,div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:0.1px dashed red;
+		}
+		height:74px;
+		background-color: #000000;
+		.container{
+
+			position:relative;
+			.wrap{
+				display:table;
+				width:90%;
+				.footer-left{
+					display:table-cell;
+					float:left;
+					font-weight: 600;
+					line-height: 48px;
+					text-align: left;
+					vertical-align: middle;
+					width:60%;
+					p{
+						color: #ffffff;
+						font-size: 14px;
+					}
+				}
+				.footer-right{
+						text-align:right;
+						display:table-cell;
+						float:right;
+						width:37%;
+
+					#flag{
+						display:inline-block;
+						vertical-align:middle;
+						height:10px;
+						width:14px;	
+					}
+					p{
+						color: #ffffff;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 48px;
+						display:inline-block;
+						vertical-align:middle;
+						margin-left:6px;
+					}
+				}
+			}
+		}
+	} 
+
+// screen width 526 to fix position of background image of slide 2 of home section *****
+// change the padding top  and bottom of snowboards to 60px ***
+// summary return the margin to second column of summary section ***
+@media(min-width:526px){
+	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+		// border:1px dashed red;
+	}
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		padding-top:40px;
+		.container{
+			.wrap{
+				padding:0;
+				.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{
+							#home-slide-1{
+								height:520px;
+							}						
+							#home-slide-2{
+								// background-position:-200px;	
+								background-position:130vw;	
+								height:520px;
+							}
+							.home-slider-main-text{
+								width:400px;
+
+								.run-over{
+									font-size:60px;	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#snowboards{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		background-color:#ffffff;
+		.container{
+			.wrap{
+				.snowbloards-top{
+					padding-top:60px;
+					.snowboards-title{
+						font-size:48px;
+					}
+				}
+				.snowboards-bottom{
+					padding-bottom:60px;
+					.snowboards-sub-title{
+						font-size: 24px; 
+					}
+				}
+			}
+		}
+	}
+
+	#mountains{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:1px dashed red;
+		}
+
+		.container{
+			.wrap{
+				background-position:110vw;
+				padding:60px 10px 60px 30px;
+
+				.mountains-title{
+						font-size:48px;
+						width:400px;
+						text-align:left;
+				}
+				.mountains-p{
+					text-align:left;
+					width:75%;
+					margin-top:41px;
+					background-color: rgba(0,0,0,0.5);	
+					border-radius:5px;		
+				}
+			}
+		}
+	}
+
+	#features{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:0.1px dashed red;
+		}
+		.container{
+			.wrap{
+				padding:60px 10px;
+			}
+		}
+	}
+
+	#summary{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:0.1px dashed red;
+		}
+		.container{
+			.wrap{
+				.summary-sec{
+					padding:30px 0 50px 0;
+					.summary-column:nth-child(2){
+						margin-top:30px;
+					}
+				}
+			}			
+		}
+	}
+}
+
+// screen width 657px to fix position of background image of slide 2 of home section ****
+@media(min-width:657px){
+	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+		// border:1px dashed red;
+	}
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		.container{
+			.wrap{
+				padding:0;
+				.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{	
+							#home-slide-1{
+								height:620px;
+							}					
+							#home-slide-2{
+								height:620px;	
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#mountains{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:1px dashed red;
+		}
+
+		.container{
+			.wrap{
+				background-position:110vw;
+				padding:60px 10px 60px 60px;
+			}
+		}
+	}
+}
+
+// screen width 770px *******************************************************************
+@media(min-width:768px){
+	#navbar{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		nav{
+			margin:15px auto;
+
+			.container{	
+				.wrap{
+					position:relative;
+					.navbar-header{
+						text-align:right;
+						#logo{
+							width:74px;
+						}
+						.navbar-toggle{
+							display:none;
+						}
+
+						.search{						
+							width:30px;
+							height:40px;
+							vertical-align:bottom;
+
+							form{
+
+								.search-text-field{
+									display:none;
+								}
+								span{
+									margin-top:5px;
+
+									.fa-search{
+										color:#ffffff;
+									}									
+								}
+								span:hover{
+									border:1px solid #ffffff;
+								}
+							}					
+						}
+						.navbar-right{
+							display:inline-block;	
+						}
+					}
+					.collapse{
+						display:inline-block;
+						position:absolute;
+						top:25px;
+						left:100px;
+						width:458px;
+						// vertical-align:middle;
+						ul{
+							li{
+								display:table-cell;
+								width:16%;
+								border:none;
+								a{
+									font-size: 18px; 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+
+		padding-top:25px;
+		.container{
+			.wrap{
+				padding:0;
+				.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{
+							#home-slide-1{
+								height:630px;
+							}						
+							#home-slide-2{
+								height:630px;
+							}
+							.home-slider-main-text{
+								width:493px;
+
+								.run-over{
+									font-size:80px;	
+								}
+								.see-details{
+									margin-top:50px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#mountains{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:1px dashed red;
+		}
+
+		.container{
+			.wrap{
+				background-position:center;
+				padding:60px 10px 60px 120px;
+				.mountains-p{
+					background-color: rgba(0,0,0,0);	
+				}
+			}
+		}
+	}
+}
+
+// screen width 860px   center background of slide 2 in home section********************
+@media(min-width:860px){
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+
+		padding-top:19px;
+		.container{
+			.wrap{
+				padding:0;
+				.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{					
+							#home-slide-2{
+								background-position:-5vw;
+								// background-position:center center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// screen width 950px  final editting ********************
+@media(min-width:950px){
+	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+		// border:1px dashed red;
+	}
+	
+	#home{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+
+		padding-top:19px;
+		.container{
+			.wrap{
+				padding:0;
+				max-width:1400px;
+				.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{
+							#home-slide-1{
+								background-position:center;
+								width:100%;
+								.home-slider-main-text{
+
+								}								
+
+							}					
+							#home-slide-2{
+								background-position:center;
+								width:100%;
+								text-align:left;
+								.home-slider-main-text{
+									margin-left:150px;
+
+								}
+							}
+							.run-over{
+								font-size:80px;	
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#snowboards{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:1px dashed red;
+		}
+		.container{
+			.wrap{
+				.snowbloards-top{
+					padding-top:100px;
+				}
+				.snowboards-bottom{
+					padding-bottom:100px;
+				}
+			}
+		}
+	}
+
+	#mountains{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border:1px dashed red;
+		}
+
+		.container{
+			.wrap{
+				background-position:center center;
+				padding:150px 10px 150px 200px;
+
+			}
+		}
+	}
+
+	#features{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p{
+			// border:0.1px dashed red;
+		}
+		.container{
+			.wrap{
+				padding:125px 10px;
+				.features-menu{
+					margin-top:20px;
+				}
+			}
+		}
+	}
+}
+
+// pop up menu contact **************************
+#contact-pop-up {
+
+	*{
+		// border:1px dashed red;
+	}	
+
+	background-color:#313131;
+	display:none;
+	height:100%;
+	left:0;
+	opacity:.95;
+	overflow:auto;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:9;
+	#popupContact {
+		position:absolute;
+		left:50%;
+		top:17%;
+		margin-left:-202px;
+		
+		top:20%;
+		z-index:9;
+		#contact-form{
+			max-width:300px;
+			min-width:250px;
+			padding:10px 50px;
+			border:2px solid gray;
+			border-radius:10px;
+			background-color:#fff;
+			h2{
+				background-color:#FEFFED;
+				padding:20px 35px;
+				margin:-10px -50px;
+				text-align:center;
+				border-radius:10px 10px 0 0;
+			}
+			hr{
+				/* space similar to <br>*/
+				margin:10px -50px;
+				border:0;
+				border-top:1px solid #ccc;
+			}
+			#name, #email {
+				width:82%;
+				padding:10px;
+				margin-top:30px;
+				border:1px solid #ccc;
+				padding-left:40px;
+				font-size:16px;
+
+				outline-color:#000000;
+			}
+			#name {
+				background-image:url("../img/computer.png");
+				background-repeat:no-repeat;
+				background-position:10px 8px;
+			}
+			#email {
+				background-image:url("../img/envelope.png");
+				background-repeat:no-repeat;
+				background-position:10px 10px;
+			}
+
+			textarea {
+				background-image:url("../img/letter.png");
+				background-repeat:no-repeat;
+				background-position:10px 10px;
+				width:82%;
+				height:95px;
+				padding:10px;
+				resize:none;
+				margin-top:30px;
+				border:1px solid #ccc;
+				padding-left:40px;
+				font-size:16px;
+				margin-bottom:30px;
+
+				outline-color:#000000;
+			}
+			#send {
+				text-decoration:none;
+				width:100%;
+				text-align:center;
+				display:block;
+				// background-color:#FFBC00;
+				color:#ffffff;
+				// border:1px solid #FFCB00;
+				padding:10px 0;
+				font-size:20px;
+				cursor:pointer;
+				border-radius:5px;
+
+				background-color:#000000;
+				border:1px solid #ffffff;
+				font-weight:700;
+
+			}
+			#send:hover{
+				background-color:#ffffff;
+				color:#000000;
+				border:1px solid #000000;
+				background-image:url("../img/symbol.png");
+				background-repeat:no-repeat;
+				background-position:10px 8px;
+			}
+			#close {
+				position:absolute;
+				right:-24px;
+				top:-24px;
+				cursor:pointer;
+				border:1px solid rgba(0,0,0,0);
+				i{
+					font-size:24px;
+					color:white;
+				}
+			}
+			#close:hover{
+				border:1px solid #ffffff;
+			}
+		}
+	}
+}
+
+
+
